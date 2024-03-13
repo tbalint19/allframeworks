@@ -9,7 +9,7 @@ export const check = (email: string) =>
   })
 
 
-export const signup = async (user: { email: string, password: string, passwordAgain: string }) =>
+export const signup = (user: { email: string, password: string, passwordAgain: string }) => 
   safeFetch({
     method: "POST",
     url: `http://localhost:3000/api/signup`,
